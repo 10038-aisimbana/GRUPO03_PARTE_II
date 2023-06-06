@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS HTML DOM - Avanzado</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <title>Grupo Nro. 3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="../assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css">
+    <link rel="stylesheet" href="../assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilosgrupo3.css">
+
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="docs-page">
+    <header class="header fixed-top">
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+                    <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+                        type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="site-logo"><a class="navbar-brand" href="../index.html"><img class="logo-icon me-2"
+                                src="../assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Grupo <span
+                                    class="text-alt">Nro. 3</span></span></a></div>
+                </div>
+                <!--//docs-logo-wrapper-->
+                <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
+
+                    <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+                        <li class="list-inline-item"><a href="https://www.youtube.com/playlist?list=PLg9145ptuAijiWx4ixGBCZB0kh6YEeNqf" target="_blank"><i
+                                    class="fab fa-youtube fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/dayana_eliz11/" target="_blank"><i
+                                    class="fab fa-instagram fa-fw"></i></a></li>
+                    </ul>
+                    <!--//social-list-->
+
+                </div>
+                <!--//docs-top-utilities-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//branding-->
+    </header>
+    <!--//header-->
+
+
+    <div class="docs-wrapper">
+        <div id="docs-sidebar" class="docs-sidebar">
+            <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+                    <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <nav id="docs-nav" class="docs-nav navbar">
+                <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+                                class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>DOM Avanzado</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">DOM Animaciones</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">DOM Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">DOM Eventlistener</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">DOM Navegación</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">DOM Nodos</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">DOM Colecciones</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7">DOM Lista de Nodos</a></li>
+                </ul>
+
+            </nav>
+            <!--//docs-nav-->
+        </div>
+        <!--//docs-sidebar-->
+        <div class="docs-content">
+            <div class="container">
+                <article class="docs-article" id="section-1">
+                    <header class="docs-header">
+                        <h1 class="docs-heading">JS HTML DOM - Avanzado <span class="docs-time">Última Actualización
+                                 06/06/2023 </span></h1>
+                        <section class="docs-intro">
+                            <img src="../images/doma.png" class="img-fluid img-thumbnail" style="width: 950px; height: 500px;">
+                            <br>
+                            <br>
+                            <p>En el desarrollo web, el HTML DOM avanzado ofrece una serie de técnicas y características que permiten a los desarrolladores crear sitios web más interactivos y personalizados. Estas funcionalidades incluyen la capacidad de agregar animaciones, controlar eventos, manipular nodos y trabajar con colecciones de elementos.
+                            </p>
+
+                            <p>HTML DOM avanzado proporciona herramientas y técnicas para crear sitios web más interactivos y personalizados. Con animaciones, eventos, manipulación de nodos, colecciones y navegación, los desarrolladores tienen la capacidad de mejorar la experiencia del usuario y hacer que las páginas web sean más dinámicas y atractivas. </p>
+
+                            <p>Las animaciones DOM permiten agregar efectos visuales y de transición a los elementos de una página web, lo que mejora la experiencia del usuario y hace que la página sea más atractiva.
+                            </p>
+                            <p>Los eventos DOM son acciones o interacciones que ocurren en una página web, como hacer clic en un botón, mover el cursor sobre un elemento o desplazarse por la página. Estos eventos se pueden detectar y manejar utilizando JavaScript, lo que permite realizar acciones específicas en respuesta a las interacciones del usuario.
+                            </p>
+                            <p>Los nodos DOM son los elementos individuales que componen una página web, como etiquetas HTML, texto y atributos. Los nodos se pueden acceder y manipular mediante JavaScript, lo que permite modificar la estructura y el contenido de una página de forma dinámica
+                            </p>
+                            <p>Las colecciones DOM son conjuntos de elementos relacionados que se pueden acceder y manipular como un grupo. Esto es útil cuando se desea realizar operaciones en varios elementos a la vez, como cambiar el estilo de todos los elementos con una clase específica.
+                            </p>
+                            <p>La navegación DOM se refiere a la capacidad de desplazarse y acceder a los elementos de una página web de manera eficiente.<p > Esto implica la capacidad de moverse por la estructura jerárquica del DOM y acceder a los nodos deseados.</p>
+                            </p>
+                            <br>
+                        </section>
+                    </header>
+                        
+						
+                        <section class="docs-section" id="item-1-1">
+                            <h2 class="section-heading">Animaciones DOM</h2>
+                            <p>Las animaciones DOM son una técnica que permite agregar efectos visuales y transiciones a los elementos de una página web, creando una experiencia más dinámica y atractiva para los usuarios. Estas animaciones se logran modificando las propiedades de los elementos HTML a lo largo del tiempo utilizando JavaScript. </p>
+                            <p> Es importante tener en cuenta que las animaciones DOM pueden afectar el rendimiento de una página web si no se manejan correctamente. Se recomienda optimizar las animaciones utilizando técnicas como el uso de transformaciones 3D (que aprovechan la aceleración por hardware) y limitar el número de animaciones simultáneas para garantizar una experiencia fluida y sin problemas.</p>
+
+                            <h4 class="heading">Ejemplo</h4>
+
+                            <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">function iniciarAnimacion() {
+    var balon = document.getElementById('balon');
+    var posicion = 0;
+    var direccion = 1;
+    var velocidad = 2;
+
+    function animar() {
+    posicion += velocidad * direccion;
+
+    if (posicion > 200 || posicion < 0) {
+    direccion *= -1;
+    }
+
+    balon.style.left = posicion + 'px';
+
+    idAnimacion = requestAnimationFrame(animar);
+    }
+
+    animar();
+    }
+                            </code></pre><br>
+
+                            <div>
+                                <img id="balon" class="balon" src="../images/brazuca.png" alt="Balón">
+                            </div>
+
+                            <script src="../js/scriptsgrupo3.js"></script>
+
+                            </div>
+                        <!--//docs-code-block-->
+                            <h3>Demo</h3>
+                            <p name="demoPara"></p>
+                            <button onclick="alternarAnimacion()">Ejecutar</button>
+                            <br>
+                            <br>            
+                        </section>
+
+
+                    <section class="docs-section" id="item-1-2">
+                        <h2 class="section-heading">Eventos DOM</h2>
+                        <p>Existen numerosos eventos DOM disponibles en JavaScript para interactuar con los elementos HTML y realizar acciones en respuesta a diferentes tipos de eventos. A continuación se muestra una lista de algunos de los eventos DOM más comunes: </p>
+                        <ul>
+                        <p><b>click</b>: Se dispara cuando se hace clic en un elemento.</p>
+                        <p><b>onmouseover</b>: Se dispara cuando el puntero del mouse se mueve sobre un elemento.</p>
+                        <p><b>change</b>: Se dispara cuando el valor de un elemento cambia (utilizado principalmente en elementos de formulario).</li>
+                        <p><b>keydown</b>: Se dispara cuando se presiona una tecla.</p>
+                        <p><b>keyup</b>: Se dispara cuando se suelta una tecla.</p>
+                        <p><b>keypress</b>: Se dispara cuando se presiona una tecla que produce un carácter.</p>
+                        <p><b>focus</b>: Se dispara cuando un elemento recibe el foco (seleccionado para entrada de datos).</p>
+                        <p><b>blur</b>: Se dispara cuando un elemento pierde el foco.</p>
+                        <p><b>submit</b>: Se dispara cuando se envía un formulario.</p>
+                        <p><b>scroll</b>: Se dispara cuando se desplaza la barra de desplazamiento de un elemento.</p>
+                        <p><b>load</b>: Se dispara cuando se completa la carga de un recurso (como una imagen o un documento).</p>
+                        <p><b>unload</b>: Se dispara cuando se descarga una página o se navega lejos de ella.</p>
+                        <p><b>resize</b>: Se dispara cuando se cambia el tamaño de la ventana del navegador.</p>
+                        <p><b>contextmenu</b>: Se dispara cuando se hace clic con el botón derecho del ratón para mostrar el menú contextual.</p>
+                        </ul>
+                        <p>Estos son solo algunos ejemplos de los eventos DOM disponibles. Existen muchos más eventos que se pueden utilizar en diferentes situaciones, y también es posible crear eventos personalizados.</p>
+
+                        <h4 class="heading">Ejemplo 1</h4>
+
+                        <h5 class="heading">Click Event</h5>
+
+                            <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">function mostrarDialogo() {
+    var dialogo = document.getElementById("miDialogo");
+    dialogo.style.display = "block";
+    }
+
+    function ocultarDialogo() {
+    var dialogo = document.getElementById("miDialogo");
+    dialogo.style.display = "none";
+    }
+                            </code></pre>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <script src="../js/event1.js"></script>
+                            
+                            <h3>Demo</h3>
+                            </div>
+                            <button onclick="mostrarDialogo()">Ejecutar</button>
+                            <div id="miDialogo" class="dialogo">
+                            <h2>Event Onclick</h2>
+                            <p>¡Hola! Haz utilizado un JS DOM Event :)</p>
+                            <button onclick="ocultarDialogo()">Cerrar</button>
+                            </div>
+                        <!--//docs-code-block-->
+                            
+                            <br>
+                            <br>
+
+                            <h4 class="heading">Ejemplo 2</h4>
+                             <h5 class="heading">OnMouseover Event</h5>
+                             <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs"> function onMouseOver(contenedor) {
+    var imagenFrontal = contenedor.querySelector('.imagen.front');
+    var imagenTrasera = contenedor.querySelector('.imagen.back');
+
+    imagenFrontal.style.transform = 'rotateY(-90deg)';
+    imagenTrasera.style.transform = 'rotateY(90deg)';
+}
+
+function onMouseOut(contenedor) {
+    var imagenFrontal = contenedor.querySelector('.imagen.front');
+    var imagenTrasera = contenedor.querySelector('.imagen.back');
+
+    imagenFrontal.style.transform = 'rotateY(0)';
+    imagenTrasera.style.transform = 'rotateY(180deg)';
+}
+                            </code></pre><br>
+
+                            <script src="../js/event2.js"></script>
+
+                            <div class="contenedor" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
+                                <img class="imagen front "  src="../images/logomundial.jpg" alt="Imagen 1" width="400px" height="250px">
+                                <img class="imagen back" src="../images/argentina.jpg" alt="Imagen 2" width="400px" height="250px" >
+                            </div>
+
+                            <h3>Demo</h3>
+                            <p name="demoPara"></p>
+                            <div class="callout-block callout-block-info">
+                        <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder me-1">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <!--//icon-holder-->
+                                    Nota
+                                </h4>
+                                <p>Para ejecutar por favor coloca el mouse sobre la imagen. </p>
+                            </div>
+                            </div>
+                    </section>
+
+
+                    <section class="docs-section" id="item-1-3">
+                            <h2 class="section-heading">EventListener DOM</h2>
+                            <p>Los event listeners (escuchadores de eventos) son funciones o bloques de código que se asocian a un elemento del DOM (Document Object Model) para escuchar y responder a eventos específicos que ocurren en ese elemento.</p>
+                            <p> Los event listeners se agregan a un elemento utilizando el método addEventListener() disponible en los elementos del DOM. Toma dos argumentos: el nombre del evento que se quiere escuchar (por ejemplo, "click", "mouseover", "keydown", etc.) y una función que se ejecutará cuando ocurra el evento.</p>
+
+                            <h4 class="heading">Ejemplo</h4>
+
+                            <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">document.addEventListener("DOMContentLoaded", function() {
+    var taskInput = document.getElementById("taskInput");
+    var addButton = document.getElementById("addButton");
+    var taskList = document.getElementById("taskList");
+
+    addButton.addEventListener("click", function() {
+    var taskText = taskInput.value;
+
+    if (taskText.trim() !== "") {
+    var newTask = document.createElement("li");
+    newTask.innerText = taskText;
+
+    newTask.addEventListener("click", function() {
+    newTask.classList.toggle("completed");
+    });
+
+    taskList.appendChild(newTask);
+    taskInput.value = "";
+    }
+    });
+    });
+                            </code></pre><br>
+
+                             </div>
+
+                            <div>
+                            <h5>Lista de tareas</h5>
+
+                                <input type="text" id="taskInput" placeholder="Ingrese una nueva tarea">
+                                <button id="addButton">Agregar</button>
+
+                                <ul id="taskList" class="list-group">
+                            <!-- Las tareas se agregarán dinámicamente aquí -->
+                            </ul>
+                            </div>
+                            <script src="../js/eventlistener.js"></script>
+                            <br>
+                        <!--//docs-code-block-->
+                        <div class="callout-block callout-block-info">
+                        <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder me-1">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <!--//icon-holder-->
+                                    Nota
+                                </h4>
+                                <p>Para ejecutar añadir elementos a la lista y luego dar click sobre cualquier elemento de la lista para tacharlo</p>
+                            </div>
+                            </div>
+
+                            <h3>Demo</h3>
+                            <p name="demoPara"></p>
+                            <br>            
+                        </section>
+
+                        <section class="docs-section" id="item-1-4">
+                            <h2 class="section-heading">Navegación DOM</h2>
+                            <p>La navegación DOM, también conocida como DOM navigation en inglés, se refiere al proceso de recorrer y acceder a diferentes elementos en la estructura del DOM (Document Object Model) utilizando métodos y propiedades proporcionados por JavaScript.</p>
+                            <p>El DOM representa la estructura de un documento HTML o XML como un árbol de objetos, donde cada elemento del documento (como etiquetas <div>, <p>, etc.) se convierte en un nodo en el árbol. La navegación DOM implica acceder y manipular estos nodos para realizar diversas operaciones, como obtener información de los elementos, modificar su contenido, agregar o eliminar elementos, cambiar estilos, entre otras cosas.</p>
+
+                            <img src="../images/navigation.jpg">
+
+                            <p></p>
+                            <p>La navegación DOM se realiza utilizando métodos y propiedades disponibles en JavaScript, como <b>getElementById</b>, <b>querySelector</b>, <b>childNodes</b>, <b>parentNode</b>, <b>nextSibling</b>, <b>previousSibling</b>, entre otros. Estos métodos y propiedades permiten acceder a elementos específicos, recorrer los nodos hijos o hermanos, y realizar acciones en función de su posición y relación en el árbol DOM.</p>
+
+                            <h4 class="heading">Ejemplo</h4>
+
+                            <p>En este ejemplo, hemos creado una galería de imágenes utilizando la navegación DOM. La galería consiste en una serie de miniaturas de imágenes, cada una envuelta en un elemento <b>"< div >"</b> con la clase <b>"my-thumbnail"</b>. Al hacer clic en una miniatura, se muestra una vista ampliada de la imagen en una ventana modal. La galería se muestra en un contenedor <b>"< div >"</b> con la clase gallery. Cada miniatura tiene un evento onclick que llama a la función <b>"showEnlargedView()"</b>, pasando el elemento de la miniatura como argumento.</p>
+
+                            <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">function showEnlargedView(thumbnail) {
+    var enlargedViewContainer = document.querySelector('.enlarged-view-container');
+    var enlargedImage = enlargedViewContainer.querySelector('img');
+    var thumbnailImage = thumbnail.querySelector('img');
+
+    enlargedImage.src = thumbnailImage.src;
+    enlargedViewContainer.classList.add('active');
+}
+
+function hideEnlargedView() {
+    var enlargedViewContainer = document.querySelector('.enlarged-view-container');
+    enlargedViewContainer.classList.remove('active');
+}
+                            </code></pre><br>
+
+                             </div>
+
+                            <div>
+                                <div class="my-gallery">
+                                    <div class="my-thumbnail" onclick="showEnlargedView(this)">
+                                        <img src="../images/lambo.png" alt="Imagen 1" width="100px" height="200px">
+                                    </div>
+                                    <div class="my-thumbnail" onclick="showEnlargedView(this)">
+                                        <img src="../images/ford.png" alt="Imagen 2">
+                                    </div>
+                                    <div class="my-thumbnail" onclick="showEnlargedView(this)">
+                                        <img src="../images/mclaren.png" alt="Imagen 3">
+                                    </div>
+                                </div>
+
+                                <div class="enlarged-view-container" onclick="hideEnlargedView()">
+                                    <img src="" alt="Vista Ampliada">
+                                </div>
+                            </div>
+                            <script src="../js/navegacion.js"></script>
+                            <br>
+                        <!--//docs-code-block-->
+                        <div class="callout-block callout-block-info">
+                        <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder me-1">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <!--//icon-holder-->
+                                    Nota
+                                </h4>
+                                <p>Para ejecutar dar click en las imagenes.</p>
+                            </div>
+                            </div>
+
+                            <h3>Demo</h3>
+                            <p name="demoPara"></p>
+                                        
+                        </section>
+
+                        <section class="docs-section" id="item-1-5" >
+                            <br>
+                            <h2 class="section-heading">Nodos DOM</h2>
+                            <p>Los nodos DOM (Document Object Model) son objetos que representan elementos individuales en una estructura de documento HTML o XML. El DOM organiza los elementos del documento en forma de árbol, donde cada elemento, atributo, texto o comentario se representa como un nodo en el árbol.</p>
+                            <p>Existen varios tipos de nodos DOM, y cada uno de ellos tiene diferentes propiedades y métodos que permiten acceder y manipular la estructura y contenido del documento. Algunos de los nodos DOM más comunes son:</p>
+
+                            <ul>  
+                                <p><b>Element Node (Nodo de Elemento)</b>:  Representa un elemento HTML o XML, como una etiqueta < div >, < p >, < ul >, etc. Los nodos de elemento pueden contener otros nodos, como nodos de texto o nodos de elemento secundarios.</p>
+                                <p><b>Text Node (Nodo de Texto)</b>: Representa el contenido de texto dentro de un elemento. Por ejemplo, el texto entre las etiquetas < p > y < /p > se representa como un nodo de texto.</p>
+                                <p><b>Attribute Node (Nodo de Atributo)</b>: Representa un atributo de un elemento HTML o XML. Por ejemplo, el atributo src de una etiqueta < img > se representa como un nodo de atributo.</p>
+                                <p><b>Comment Node (Nodo de Comentario)</b>:  Representa un comentario dentro del documento. Los comentarios se escriben entre < !-- y -- >.</p>
+                                <p><b>Document Node (Nodo de Documento)</b>: Representa el documento en sí mismo. Es el nodo raíz del árbol DOM.</p>
+                            </ul>
+
+                            <p>Estos son solo algunos ejemplos de los tipos de nodos DOM más comunes. Cada nodo tiene propiedades y métodos específicos que permiten acceder y manipular su contenido, atributos, hijos y relaciones con otros nodos en el árbol.El uso de nodos DOM es fundamental para interactuar con la estructura y contenido de un documento HTML o XML utilizando JavaScript u otros lenguajes de programación. Permite acceder a los elementos, modificar su contenido, agregar o eliminar elementos, cambiar estilos y mucho más.</p>
+
+                            <h4 class="heading">Ejemplo</h4>
+                            <p> En este ejemplo, tenemos un botón que, cuando se hace clic, ejecuta la función agregarElemento(). Esta función crea un nuevo elemento de párrafo (< p >) utilizando document.createElement(). Luego, se crea un nodo de texto utilizando document.createTextNode() y se le asigna el contenido del párrafo. Después, se agrega el nodo de texto al párrafo utilizando appendChild(). Finalmente, se agrega el párrafo al contenedor utilizando appendChild() en el elemento con el id "contenedor1".</p>
+
+                            <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">function agregarElemento() {
+    var nuevoParrafo = document.createElement("p");       
+    var contenido = document.createTextNode("¡Hola, soy un nuevo párrafo!");
+    nuevoParrafo.appendChild(contenido);
+    nuevoParrafo.style.color = "green";
+    document.getElementById("contenedor1").appendChild(nuevoParrafo);
+}
+                            </code></pre>
+
+                             </div>
+                             <script src="../js/nodos.js"></script>
+                            <div> 
+                                <div id="contenedor1">
+                                    <p>Parrafo de Ejemplo Existente</p>                           
+                                </div>
+                            </div>
+                            <br>
+                        <!--//docs-code-block-->
+
+                            <h3>Demo</h3>
+                            <p name="demoPara" ></p>
+                            <button onclick="agregarElemento()">Ejecutar</button>
+                            <br>
+                            <br>            
+                        </section>
+
+                        <section class="docs-section" id="item-1-6">
+                            <br>
+                            <h2 class="section-heading">Colecciones DOM</h2>
+                            <p>En el contexto de las Collections DOM, "Collections" se refiere a las diferentes colecciones o conjuntos de elementos que se pueden acceder y manipular dentro del DOM. Estas colecciones son objetos que representan grupos de elementos relacionados dentro de un documento.</p>
+                            <p>Algunas de las colecciones DOM más comunes incluyen:</p>
+
+                            <ul>  
+                                <p><b>document</b>:Es la colección principal y representa el documento completo. Proporciona métodos y propiedades para acceder y manipular elementos en todo el documento.</p>
+                                <p><b>getElementsByTagName</b>:  Es una colección de elementos que se obtienen mediante el nombre de la etiqueta HTML. Por ejemplo, getElementsByTagName("div") devuelve todos los elementos div del documento.</p>
+                                <p><b>getElementsByClassName</b>: Es una colección de elementos que se obtienen mediante el nombre de la clase CSS. Por ejemplo, getElementsByClassName("mi-clase") devuelve todos los elementos que tienen la clase "mi-clase".</p>
+                                <p><b>getElementById</b>:  Es una colección de elementos que se obtienen mediante el ID del elemento. Dado que el ID debe ser único en el documento, esta colección generalmente contiene solo un elemento.</p>
+                                <p><b>childNodes</b>: Es una colección de nodos secundarios de un elemento determinado. Los nodos secundarios pueden ser elementos, comentarios, texto, etc.</p>
+                            </ul>
+
+                            <p>Estas colecciones proporcionan métodos y propiedades para iterar, acceder y manipular los elementos que contienen. Los desarrolladores web utilizan estas colecciones DOM para realizar tareas como la manipulación del contenido, la modificación de estilos y la interacción con eventos en un documento web.</p>
+
+                            <h4 class="heading">Ejemplo</h4>
+
+                            <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">function myFunction1() {
+      const myCollection = document.getElementsByTagName("p");
+      const secondPara = document.getElementsByClassName("secondPara")[0];
+
+      for (let i = 0; i < myCollection.length; i++) {
+        myCollection[i].classList.remove("blue");
+        myCollection[i].classList.add("highlight");
+
+        if (i === 0) {
+          myCollection[i].classList.remove("highlight");
+        }
+
+        if (myCollection[i] === secondPara) {
+          if (myCollection[i].classList.contains("blue")) {
+            myCollection[i].classList.remove("blue");
+          } else {
+            myCollection[i].classList.add("blue");
+          }
+        }
+      }
+    }
+                            </code></pre>
+
+                            </div>
+                           
+                            <div> 
+                                <h6 id="firstPara">Primer Párrafo</h6>
+                                <h6 class="secondPara">Segundo Párrafo</h6>
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quae, ut perferendis fugit excepturi, consectetur fugiat. Perferendis quas harum neque eligendi blanditiis totam, deleniti iure? Molestiae itaque assumenda et alias.</h6>
+                            </div>
+                            <br>
+                        <!--//docs-code-block-->
+
+                            <h3>Demo</h3>
+                            <p name="demoPara"></p>
+                            <button onclick="myFunction1()">Ejecutar</button>
+                            <script src="../js/colecciones.js"></script>
+                            <br>            
+                        </section>
+
+                        <section class="docs-section" id="item-1-7">
+                            <br>
+                            <h2 class="section-heading">Lista de Nodos DOM</h2>
+                            <p>Un NodeList es un objeto en el Modelo de Objetos del Documento (DOM) que representa una colección ordenada de nodos. Los nodos en un NodeList se obtienen a través de métodos como getElementsByTagName, getElementsByClassName, querySelectorAll o childNodes, entre otros.</p>
+                            <p>Un NodeList es similar a un array, ya que contiene una lista de elementos, pero no es un array real. A diferencia de un array, un NodeList no tiene todos los métodos y propiedades de un array, como push, pop, slice, etc.</p>
+                            <p>Para acceder a los elementos individuales dentro de un NodeList, se puede utilizar la notación de corchetes y el índice correspondiente. Por ejemplo, nodeList[0] devuelve el primer nodo en el NodeList.</p>
+
+                            <p>Sin embargo, es importante tener en cuenta que un NodeList no es una estructura de datos estática. Cada vez que se accede a un NodeList, se realiza una consulta en el DOM para obtener los nodos actualizados. Por lo tanto, si se necesita acceder a los mismos nodos varias veces, puede ser más eficiente almacenarlos en una variable y trabajar con esa variable en lugar de realizar consultas repetidas.</p>
+
+                            <h4 class="heading">Ejemplo</h4>
+                            <p>En este ejemplo, el código JavaScript selecciona todos los elementos li dentro de la lista con el identificador myList utilizando document.querySelectorAll('#myList li'), lo que devuelve un NodeList de elementos.</p>
+                            <p>Con este ejemplo, puedes ver cómo se pueden realizar múltiples acciones en los elementos de una lista utilizando un NodeList. Los elementos pares se resaltan con un color de fondo amarillo, mientras que los elementos impares se vuelven negrita y tienen un evento de clic asociado.</p>
+
+                            <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">var nodeList = document.querySelectorAll('#myList li');
+
+
+    nodeList.forEach(function(element, index) {
+      if (index % 2 === 0) {
+        element.classList.add('highlight');
+      } else {
+        element.classList.add('bold');
+        element.addEventListener('click', function() {
+          alert('Haz hecho clic en el elemento: ' + element.textContent);
+        });
+      }
+    });
+                            </code></pre>
+
+                            </div>
+                           
+                            <div>   
+                                <ul id="myList">
+                                    <li>Elemento 1</li>
+                                    <li>Elemento 2</li>
+                                    <li>Elemento 3</li>
+                                    <li>Elemento 4</li>
+                                    <li>Elemento 5</li>
+                                    <li>Elemento 6</li>
+                            </ul>
+                            </div>
+                            <br>
+
+                            <h3>Demo</h3>
+                            <p name="demoPara"></p>
+
+                            <div class="callout-block callout-block-info">
+                                <div class="content">
+                                    <h4 class="callout-title">
+                                        <span class="callout-icon-holder me-1">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                    <!--//icon-holder-->
+                                    Nota
+                                    </h4>
+                                    <p>Puedes lanzar una alerta dando click en los Elementos en <b>negrita</b>.</p>
+                                </div>
+                            </div>
+
+                            <script src="../js/nodelist.js"></script>
+                            <br>            
+                        </section>
+
+
+                    <footer class="footer">
+                        <div class="container text-center py-5">
+                            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+                            <small class="copyright"><b>INTEGRANTES GRUPO 3</b><br>Camilo Arrieta <br>Dayana Llumiquinga<br>Adrian Simbaña</small>
+                            <ul class="social-list list-unstyled pt-4 mb-0">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/camilojes.arrieta" target="_blank"><i
+                                            class="fab fa-facebook-f fa-fw"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/adrian.isaee/" target="_blank"><i
+                                            class="fab fa-instagram fa-fw"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100031035332913" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+                            </ul>
+                            <!--//social-list-->
+                        </div>
+                    </footer>
+            </div>
+        </div>
+    </div>
+    <!--//docs-wrapper-->
+
+
+    <!-- Javascript -->
+    <script src="../assets/plugins/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- Page Specific JS -->
+    <script src="../assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="../assets/js/highlight-custom.js"></script>
+    <script src="../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="../assets/js/docs.js"></script>
+    <script src="../assets/plugins/codigo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- SCROOLL REVEAL SCRIPT -->
+    <script>
+        window.sr = ScrollReveal();
+
+        sr.reveal('#item-1-1', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+
+        sr.reveal('#item-1-2', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+        sr.reveal('#item-1-3', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+
+        sr.reveal('#item-1-4', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+        sr.reveal('#item-1-5', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+
+        sr.reveal('#item-1-6', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+        sr.reveal('#item-1-7', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '300px'
+        });
+
+        sr.reveal('.docs-header', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
